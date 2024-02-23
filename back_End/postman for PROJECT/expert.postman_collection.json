@@ -1,0 +1,672 @@
+{
+	"info": {
+		"_postman_id": "5bbbedff-4739-43e4-9b93-6013c3be98cd",
+		"name": "expert",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "mony",
+			"item": [
+				{
+					"name": "add_mony",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|MLAaw2LGHcBZoBAYJWbRmCpKqrW7dQsHcd7cua9E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ammount",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "cost",
+									"value": "5000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/add-mony-for-expert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"add-mony-for-expert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mony-expert",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|HHf3yAD7gZpY7EAfUOEtTyKRQnAIbmFiRoy4cVyO",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mony-expert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mony-expert"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "expert-register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|OVqVbbKMEkigBYRVvp3aETyXEP5pFV4t1xybUnJp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mesar",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mesar@gmail.comfrw",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Naeem/Pictures/images/129270452-happy-little-kids-going-to-school.webp"
+						},
+						{
+							"key": "experiences",
+							"value": "row",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "haras",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0934",
+							"type": "text"
+						},
+						{
+							"key": "consultations_id[]",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "consultations_id[]",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "consultations_id[]",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "day_id[]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "day_id[]",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "day_id[]",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/expert-register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"expert-register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "expert-login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "ahmad",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "ayham@gmail.comm",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "00000000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "experiences",
+							"value": "laravel",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "alTal",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "0943174249",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/expert-login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"expert-login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "expert-logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|TZkw60bVpHz9CUVmcUhorswq1yFu5SdgrMePqRHg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "ahmad",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "mohmad00123456@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "j0943174249",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password_confirmation",
+							"value": "00000000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "experiences",
+							"value": "laravel",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "alTal",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "0943174249",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "consultations_id[]",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "consultations_id[]",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "consultations_id[]",
+							"value": "4",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "consultations_id[]",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/expert-logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"expert-logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "expert-profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "11|7lJ8c8azSpyzS61zEU90MYRPZDH0BejyOH6NH0G8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "ahmad",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "mohmad00123456@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "j0943174249",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password_confirmation",
+							"value": "00000000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "experiences",
+							"value": "laravel",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "alTal",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "0943174249",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/expert-profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"expert-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "expert-edit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|TZkw60bVpHz9CUVmcUhorswq1yFu5SdgrMePqRHg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mhmaoud",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "adamm@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Naeem/Pictures/images/346493.jpg"
+						},
+						{
+							"key": "experiences",
+							"value": "laravel,vue.js,html",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "mnin",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "23432432",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/expert-edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"expert-edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch-type-of-expertss",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/fetch-type-of-experts-in-expert/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"fetch-type-of-experts-in-expert",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch-information-expert",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "9|z00MFKXVPJJB66KrEmGrm361xpNMDjVIJ0oFpRQA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/fetch-information-expert-in-expert/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"fetch-information-expert-in-expert",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reseved_dates",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|JtyzYRkkBK7UlflndSbxU4fdNY4mgEgtQHBJxkf6",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/reseved_dates/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reseved_dates",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-days",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
