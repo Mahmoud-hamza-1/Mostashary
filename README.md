@@ -8,5 +8,4 @@ session with a specific expert. ...
 ![I'm Mobile App Developer](https://github.com/Mahmoud-hamza-1/Mostashary/blob/main/mo.jpg)
 
 ## Screen : 
-![I'm Mobile App Developer](https://github.com/Mahmoud-hamza-1/Mostashary/blob/main/assets/images/2eab105cf3f1dfb9d2732c10b9c6e970.jpg, widh=300
-)
+![I'm Mobile App Developer](https://github.com/Mahmoud-hamza-1/Mostashary/blob/main/assets/images/2eab105cf3f1dfb9d2732c10b9c6e970.jpg, width=300)
